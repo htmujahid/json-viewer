@@ -7,12 +7,12 @@ class JSONViewer{
 
     showJSON(json, maxLvl, colAt){
 
-		let maxLevel = typeof maxLvl === "number" ? maxLvl : -1; 
-		let columnAt = typeof colAt === "number" ? colAt : -1; 		
+	let maxLevel = typeof maxLvl === "number" ? maxLvl : -1; 
+	let columnAt = typeof colAt === "number" ? colAt : -1; 		
 		
         this.jsonContainer.innerHTML = "";
 
-		this.parseJSON(this.jsonContainer, json, maxLevel, columnAt, 0);
+	this.parseJSON(this.jsonContainer, json, maxLevel, columnAt, 0);
     }
     
     parseJSON(outputParent, value, maxLevel, columnAt, level) {
